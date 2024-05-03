@@ -1,0 +1,19 @@
+  let num = 8;
+  if(typeof num === 'number'){
+  console.log ('yes');
+  } 
+  
+function checkCustomersArray(){
+  for(let i=0; i<customersArray.length; i++){
+      if(typeof customersArray[i] != 'string'){
+        console.log(`Type error: ${customersArray[i]} should be a string!`);
+      }
+  }
+}
+checkCustomersArray()
+
+function stringPush(val){
+  if(typeof val === 'string'){
+    customersArray.push(val);
+  }
+} 
